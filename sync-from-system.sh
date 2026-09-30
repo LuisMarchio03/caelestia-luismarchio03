@@ -61,7 +61,12 @@ is_excluded() {
 
 # ------------------------------------------------------------------ caelestia
 log "caelestia"
-sanitize < "$HOME/.config/caelestia/shell.json" > "$REPO/config/caelestia/shell.json"
+# shell.json  = comportamento (barra, dashboard, lock, idle)
+# shell-tokens.json = dimensoes (largura da barra, padding, rounding, fontes)
+for f in shell.json shell-tokens.json; do
+    [[ -f "$HOME/.config/caelestia/$f" ]] && \
+        sanitize < "$HOME/.config/caelestia/$f" > "$REPO/config/caelestia/$f"
+done
 for f in hypr-user.conf hypr-blur.conf; do
     [[ -f "$HOME/.config/caelestia/$f" ]] && \
         sanitize < "$HOME/.config/caelestia/$f" | strip_private_blocks > "$REPO/config/caelestia/$f"
