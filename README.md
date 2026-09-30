@@ -1,6 +1,6 @@
 <div align="center">
 
-# caelestia-marchio
+# Caelestia LuisMarchio03
 
 **A minha configuração do [Caelestia](https://github.com/caelestia-dots/caelestia) — com instalador de máquina nova.**
 
