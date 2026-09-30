@@ -1,0 +1,32 @@
+# hypr-vars.conf — variaveis de usuario do Caelestia
+#
+# Instale como ~/.config/caelestia/hypr-vars.conf
+#
+# Este arquivo e carregado ANTES dos configs do Caelestia (hyprland.conf:14).
+# E o lugar certo para monitor, workspace e qualquer variavel que os dots ja
+# gerenciam. Nao edite os arquivos do proprio Caelestia: um `caelestia update`
+# sobrescreve tudo e voce ganha conflito em cima de conflito.
+#
+# Para coisa que os dots NAO cobrem (regra de janela, bind proprio), use o
+# hypr-user.conf, carregado por ultimo.
+
+# ---------------------------------------------------------------- monitores
+# Descubra os nomes com:  hyprctl monitors
+#
+# Exemplo de notebook + monitor externo por HDMI a direita:
+#
+# monitor = eDP-1,     preferred, 0x0,      1
+# monitor = HDMI-A-1,  preferred, 1920x0,   1
+#
+# Curinga para qualquer outra saida que aparecer:
+# monitor = , preferred, auto, 1
+
+monitor = , preferred, auto, 1
+
+# --------------------------------------------------------------- workspaces
+# Prender workspaces a um monitor especifico. Ajuste os nomes aos seus.
+#
+# workspace = 1,  monitor:eDP-1, default:true
+# workspace = 2,  monitor:eDP-1
+# workspace = 6,  monitor:HDMI-A-1, default:true
+# workspace = 7,  monitor:HDMI-A-1

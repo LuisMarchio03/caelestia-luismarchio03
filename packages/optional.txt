@@ -1,0 +1,3 @@
+freerdp
+msodbcsql17
+teamviewer

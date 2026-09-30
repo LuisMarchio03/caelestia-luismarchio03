@@ -1,0 +1,107 @@
+{
+  // Aparência
+  "cli_default_open_behavior": "existing_window",
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "theme": {
+    "mode": "dark",
+    "dark": "Caelestia",
+    "light": "Caelestia"
+  },
+  "base_keymap": "VSCode",
+  "vim_mode": false,
+  "ui_font_family": "Inter",
+  "ui_font_size": 14,
+  "buffer_font_family": "FiraCode Nerd Font",
+  "buffer_font_size": 14,
+  "buffer_line_height": "comfortable",
+  "cursor_blink": false,
+
+  // Editor
+  "autosave": "on_focus_change",
+  "format_on_save": "on",
+  "tab_size": 4,
+  "soft_wrap": "none",
+  "show_whitespaces": "selection",
+  "relative_line_numbers": false,
+  "inlay_hints": { "enabled": true },
+
+  // Git
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": { "enabled": true }
+  },
+
+  // Painéis
+  "project_panel": {
+    "dock": "left",
+    "default_width": 240,
+    "auto_reveal_entries": true
+  },
+  "outline_panel": { "dock": "right" },
+  "scrollbar": {
+    "show": "auto",
+    "git_diff": true,
+    "diagnostics": "all"
+  },
+
+  // Terminal
+  "terminal": {
+    "shell": { "program": "/bin/fish" },
+    "working_directory": "current_project_directory",
+    "font_family": "FiraCode Nerd Font",
+    "font_size": 13
+  },
+
+  // Agent (Claude via Anthropic)
+  "agent": {
+    "enabled": true,
+    "dock": "right",
+    "default_width": 520,
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-opus-4-7"
+    }
+  },
+
+  // Linguagens
+  "languages": {
+    "TypeScript": {
+      "tab_size": 2,
+      "formatter": {
+        "external": {
+          "command": "pnpm",
+          "arguments": ["exec", "prettier", "--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "TSX": {
+      "tab_size": 2,
+      "formatter": {
+        "external": {
+          "command": "pnpm",
+          "arguments": ["exec", "prettier", "--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "JavaScript": { "tab_size": 2 },
+    "C#": { "tab_size": 4, "formatter": "language_server" },
+    "SQL": { "tab_size": 2, "format_on_save": "off" },
+    "JSON": { "tab_size": 2 },
+    "Pascal": { "tab_size": 2, "format_on_save": "off" }
+  },
+
+  // Extensões auto-instaladas (Tailwind e Prettier já são built-in)
+  "auto_install_extensions": {
+    "csharp": true,
+    "pascal": true,
+    "sql": true,
+    "dockerfile": true,
+    "env": true,
+    "toml": true
+  }
+}

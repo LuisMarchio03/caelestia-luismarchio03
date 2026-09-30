@@ -1,0 +1,46 @@
+[
+  // Workspace — panes e painéis
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-\\":        "pane::SplitRight",
+      "ctrl-k ctrl-\\": "pane::SplitDown",
+      "ctrl-k w":       "pane::CloseAllItems",
+      "ctrl-alt-left":  "workspace::ActivatePaneLeft",
+      "ctrl-alt-right": "workspace::ActivatePaneRight",
+      "ctrl-alt-up":    "workspace::ActivatePaneUp",
+      "ctrl-alt-down":  "workspace::ActivatePaneDown",
+      "ctrl-k z":       "workspace::ToggleCenteredLayout"
+    }
+  },
+
+  // Pane — ciclo de abas
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-h": "pane::ActivatePrevItem",
+      "alt-l": "pane::ActivateNextItem",
+      "alt-1": ["pane::ActivateItem", 0],
+      "alt-2": ["pane::ActivateItem", 1],
+      "alt-3": ["pane::ActivateItem", 2],
+      "alt-4": ["pane::ActivateItem", 3],
+      "alt-5": ["pane::ActivateItem", 4]
+    }
+  },
+
+  // Agent panel
+  {
+    "context": "AgentPanel",
+    "bindings": {
+      "ctrl-k m": "agent::ToggleModelSelector"
+    }
+  },
+
+  // Editor — outline/symbol navigation
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-o": "outline::Toggle"
+    }
+  }
+]

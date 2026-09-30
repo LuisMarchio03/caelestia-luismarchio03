@@ -1,0 +1,22 @@
+# Nada de segredo, mesmo por acidente.
+*.token
+*.secret
+*.key
+*.pem
+.env
+.env.*
+**/conf.d/gitlab-*.fish
+**/functions/delphi-*.fish
+**/functions/vm-*.fish
+
+# Sobra de edicao
+*.bak
+*.bak-*
+*.orig
+*.rej
+*~
+.DS_Store
+
+# Estado local que nao deve viajar entre maquinas
+config/nvim/lazy-lock.json.bak
+config/**/.git/

@@ -1,0 +1,61 @@
+# lazygit config — Caelestia theme
+gui:
+  nerdFontsVersion: "3"
+  border: rounded
+  showFileTree: true
+  showRandomTip: false
+  showCommandLog: false
+  expandFocusedSidePanel: false
+  mouseEvents: true
+  theme:
+    # Caelestia accent (#bfc1ff lavender)
+    activeBorderColor:
+      - '#bfc1ff'
+      - bold
+    # Muted surface border
+    inactiveBorderColor:
+      - '#46464f'
+    # Options/hints use blue
+    optionsTextColor:
+      - '#aeb8ff'
+    # Selected line uses elevated surface
+    selectedLineBgColor:
+      - '#2a292e'
+    selectedRangeBgColor:
+      - '#2a292e'
+    # Cherry-pick uses hover accent
+    cherryPickedCommitBgColor:
+      - '#565992'
+    cherryPickedCommitFgColor:
+      - '#bfc1ff'
+    # Unstaged/deleted uses Caelestia red-equivalent (purple-red)
+    unstagedChangesColor:
+      - '#bfa6fe'
+    defaultFgColor:
+      - '#e5e1e7'
+git:
+  pagers:
+    - colorArg: always
+      useConfig: false
+  commit:
+    signOff: false
+  merging:
+    manualCommit: false
+    args: ""
+  log:
+    order: topo-order
+    showGraph: always
+    showWholeGraph: false
+  skipHookPrefix: WIP
+  autoFetch: true
+  autoRefresh: true
+  branchLogCmd: "git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium {{branchName}} --"
+  allBranchesLogCmds:
+    - git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium --all
+os:
+  editPreset: nvim
+refresher:
+  refreshInterval: 10
+  fetchInterval: 60
+update:
+  method: never
