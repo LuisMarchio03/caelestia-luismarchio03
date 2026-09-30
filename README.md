@@ -19,9 +19,9 @@ Um desktop Hyprland + Quickshell, do jeito que eu uso. Não é um rice novo: é 
 [![SDDM](https://img.shields.io/badge/SDDM-sugar--candy-E95420?style=for-the-badge)](https://github.com/Kangie/sddm-sugar-candy)
 [![MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-a6e3a1?style=for-the-badge)](LICENSE)
 
-[![Último commit](https://img.shields.io/github/last-commit/LuisMarchio03/caelestia-marchio?style=flat-square&color=cba6f7)](https://github.com/LuisMarchio03/caelestia-marchio/commits)
-[![Tamanho](https://img.shields.io/github/repo-size/LuisMarchio03/caelestia-marchio?style=flat-square&color=89b4fa)](https://github.com/LuisMarchio03/caelestia-marchio)
-[![Stars](https://img.shields.io/github/stars/LuisMarchio03/caelestia-marchio?style=flat-square&color=f9e2af)](https://github.com/LuisMarchio03/caelestia-marchio/stargazers)
+[![Último commit](https://img.shields.io/github/last-commit/LuisMarchio03/caelestia-luismarchio03?style=flat-square&color=cba6f7)](https://github.com/LuisMarchio03/caelestia-luismarchio03/commits)
+[![Tamanho](https://img.shields.io/github/repo-size/LuisMarchio03/caelestia-luismarchio03?style=flat-square&color=89b4fa)](https://github.com/LuisMarchio03/caelestia-luismarchio03)
+[![Stars](https://img.shields.io/github/stars/LuisMarchio03/caelestia-luismarchio03?style=flat-square&color=f9e2af)](https://github.com/LuisMarchio03/caelestia-luismarchio03)
 
 </div>
 
@@ -121,8 +121,8 @@ O `caelestia-meta` puxa sozinho o Hyprland, fish, foot, eza, starship, btop e fa
 > Feito para máquina **nova**. Em máquina com rice já configurado, rode com `--configs-only` e revise o backup antes de reiniciar a sessão.
 
 ```bash
-git clone https://github.com/LuisMarchio03/caelestia-marchio.git
-cd caelestia-marchio
+git clone https://github.com/LuisMarchio03/caelestia-luismarchio03.git
+cd caelestia-luismarchio03
 ./install.sh
 ```
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# caelestia-marchio — instalador
+# caelestia-luismarchio03 — instalador
 #
 # Monta um desktop Caelestia (Hyprland + Quickshell) numa maquina Arch/CachyOS
 # limpa: instala os pacotes e COPIA as configs deste repo para ~/.config.
@@ -68,8 +68,8 @@ done
 
 cat <<EOF
 
-  caelestia-marchio
-  -----------------
+  caelestia-luismarchio03
+  -----------------------
   repo:    $REPO
   backup:  $BACKUP
   pacotes: $([[ $DO_PACKAGES -eq 1 ]] && echo sim || echo nao)
